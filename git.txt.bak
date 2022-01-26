@@ -1,10 +1,8 @@
-GIT
+Git 
 
-curso base:
 https://www.youtube.com/watch?v=FF1f4bKYhoo&list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj
 
 Git -> Ferramenta de controle de versões, armazena na nuvem, pode ser trabalhado em equipe
-
 Master - ramo principal
 Head - onde o projeto se encontra no grafo
 
@@ -31,6 +29,7 @@ git status
 git commit -m "comentario"
 
 #Mostra todos os commits e datas
+git log
 git log --oneline --graph --all
 
 #identifica o ramo que o projeto se encontra
@@ -54,7 +53,7 @@ git remote  #verifica se existe repositorio remoto
 git remote add origin <link>  
 git push -u origin main
 
-#alternar
+#descartar alterações em um arquivo 
 git checkout <arquivo>
 
 #remover conteudo do container
