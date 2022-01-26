@@ -1,0 +1,70 @@
+Git 
+
+https://www.youtube.com/watch?v=FF1f4bKYhoo&list=PLbEOwbQR9lqzK14I7OOeREEIE4k6rjgIj
+
+Git -> Ferramenta de controle de versões, armazena na nuvem, pode ser trabalhado em equipe
+Master - ramo principal
+Head - onde o projeto se encontra no grafo
+
+#Mostrar versão
+git version 
+
+#Configurar git
+git config --global user.name "usuario"
+git config --global user.email "my@email.com"
+git config user.name  #mostra usuario configurado
+git config user.email #mostra email configurado
+git config core.editor #mostra o editor configurado
+
+#Criar um projeto git na pasta
+git init
+
+#Adiciona arquivos para serem commitados
+git add
+
+#Mostra os arquivos 
+git status
+
+#Commitar
+git commit -m "comentario"
+
+#Mostra todos os commits e datas
+git log
+git log --oneline --graph --all
+
+#identifica o ramo que o projeto se encontra
+git branch
+
+#alterna entre os commits
+git checkout bc4836c (hash do commit)
+git checkout master
+
+#mostra as mudanças antes do commit
+git diff 
+
+#Cria um novo ramo (branch)
+git checkout -b teste
+
+#fundir a ramificação na master (precisa estar na master)
+git merge teste
+
+#Criar repositório remoto 
+git remote  #verifica se existe repositorio remoto
+git remote add origin <link>  
+git push -u origin main
+
+#descartar alterações em um arquivo 
+git checkout <arquivo>
+
+#remover conteudo do container
+git reset HEAD
+
+#remover um commit
+git commit -am "removendo"
+git reset --hard <commit>
+
+#clonar projeto
+git clone <link>
+
+#sincronizar com o repositorio
+git fetch
